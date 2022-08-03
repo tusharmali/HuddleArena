@@ -1,53 +1,96 @@
-<!-- Home Page of the Huddle Arena -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css"/>
     <title>Huddle Arena | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="call">
-        <!-- <video autoplay loop muted plays-inline class="back-video">
-            <source src="assets/videos/video.mp4" type="video/mp4">
-        </video> -->
-        <img  class="back-image" src="assets/images/background1.png" alt="Huddle Arena">
-
+    <section class="header">
         <nav>
-            <img class="logo" src="assets/images/logo.svg" alt="Huddle Arena">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="book-now">Book</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html"><img src="images/logo.svg" alt="">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Book</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
-        <div class="content">
-            <h1>HUDDLE ARENA    </h1>
-            <a href="#who-we-are">Explore</a>
-        </div>
-    </div>
+<div class="text-box">
+    <h1>HUDDLE ARENA</h1>
+    <p>Lorem ipsum dolor sit.</p>
+    <a href="#" class="explr">Explore!</a>
+</div>
 
-    <section id="who-we-are">
+    </section>
+
+    <section class="about">
+        <h1>About</h1>
         
-        <div class="call2">
-            <div class="image-all">
-                <img class="right-1" src="assets/images/image3.png" alt="Image-3">
-                
+
+        <div class="row">
+            <div class="col">
+                <img class="about-img" src="images/image1.jpg" alt="">
             </div>
-            <div class="image-all1">
-            <h1>About Huddle Arena</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, assumenda? Aspernatur excepturi nostrum magni molestias deserunt soluta vero incidunt ea! Consectetur quo porro molestiae aliquid animi saepe optio unde odio, assumenda dolores voluptates asperiores! Repudiandae tenetur voluptatem, tempora ea placeat sequi nisi aliquid eum iure ut voluptate at fugiat a?</p>
+            <div class="col1">
+                <h3>What's Huddle Arena?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Aperiam ut fugiat maxime tenetur? Deserunt provident odio fugit 
+                    natus itaque dolore et ipsum ut saepe molestiae architecto accusamus 
+                    expedita ducimus, iste dicta nemo modi veritatis ea? Similique officia 
+                    incidunt consectetur sint quos minima vitae, hic modi? Quasi hic non 
+                    mollitia saepe ullam totam debitis molestias, nihil quam voluptas natus 
+                    iste animi!</p>
             </div>
         </div>
-        
+
+        <div class="row">
+            <div class="col1">
+                <h3>What Huddle Arena Do?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Aperiam ut fugiat maxime tenetur? Deserunt provident odio fugit 
+                    natus itaque dolore et ipsum ut saepe molestiae architecto accusamus 
+                    expedita ducimus, iste dicta nemo modi veritatis ea? Similique officia 
+                    incidunt consectetur sint quos minima vitae, hic modi? Quasi hic non 
+                    mollitia saepe ullam totam debitis molestias, nihil quam voluptas natus 
+                    iste animi!</p>
+            </div>
+            <div class="col">
+                <img class="about-img1" src="images/image3.png" alt="">
+            </div>
+        </div>
     </section>
+
+    <!-- sec3 -->
+    <section class="cards">
+        <h1>Our Services</h1>
+    </section>
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
